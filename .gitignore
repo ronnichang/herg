@@ -1,4 +1,6 @@
+# #### customized ####
 data_cardiotoxnet/
+huggingface/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
