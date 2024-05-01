@@ -14,7 +14,9 @@ def get_data():
     except Exception as e:
         print("An error occurred:", str(e))
 
+    return data_split
 
+    """
     # external data from CardioToxNet
     ext_data_keys = ['pos','neg','new']
     ext_data = []
@@ -27,3 +29,4 @@ def get_data():
     ext_data.append(pd.concat(ext_data).reset_index(drop=True))
 
     return data_split, {k: d for k, d in zip(ext_data_keys, ext_data) }    
+    """
