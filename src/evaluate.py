@@ -3,7 +3,7 @@ from sklearn.metrics import (
     accuracy_score, roc_auc_score, confusion_matrix
 )
 
-def eval(y_test, y_pred):
+def eval(y_test, y_pred, model_name=""):
     accuracy = accuracy_score(y_test, y_pred)
     roc_auc = roc_auc_score(y_test, y_pred)
     precision = precision_score(y_test, y_pred)
@@ -25,3 +25,6 @@ def eval(y_test, y_pred):
     print("F1 Score:", f1)
     print("Matthews Correlation Coefficient:", mcc)
     print("Specificity (Negative Prediction Accuracy):", specificity)
+    
+    # output to file
+    
